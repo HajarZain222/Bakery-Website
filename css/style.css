@@ -379,6 +379,12 @@ section {
         flex-direction: column;
     }
 
+    .whoWeAre-content .info,
+    .ourLocation-content .info,
+    .contactInformation-content .info {
+        margin-left: 20px;
+    }
+
     .whoWeAre-content .info h2 ,
     .ourLocation-content .info h2 ,
     .ourBaking-content .info h2 ,
