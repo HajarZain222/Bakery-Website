@@ -38,6 +38,8 @@
 
     .header.homepage.scrolled #logo-img {
         content: url("../images/bakery-color.png");
+        max-width: 180px;
+        max-width: 50px;
     }
 
     .header:not(.homepage) {
