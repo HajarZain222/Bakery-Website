@@ -1,0 +1,114 @@
+.offer .background {
+    position: relative;
+    min-height: 40vh;
+    background-image: url(/images/drew-coffman.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Start Hero Section */
+.offer .hero-content .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 75px 0;
+}
+
+.offer .hero-content .info h1 {
+    font-size: 56px;
+    font-weight: 400;
+    margin: 40px 0 -40px;
+    font-family: "Alegreya", sans-serif;
+}
+
+.offer .hero-content .info .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0 -40px;
+}
+
+.offer .hero-content .info .links a,
+.offer .hero-content .info .links span ,
+.offer .hero-content .info .links p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.offer .hero-content .info .links a,
+.offer .hero-content .info .links span {
+    color: #d9d9d9;
+}
+
+.offer .hero-content .info .links a:hover {
+    color: var(--main-color);
+}
+/* End Hero Section */
+
+/* Start Our Offer Section */
+.ourOffer .offer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.offer-cards .offer-card  {
+    margin-top: -20px;
+}
+
+.offer-cards .offer-card .offer-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.offer-cards .offer-card .offer-title h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+    font-family: "Alegreya", sans-serif;
+}
+
+.offer-cards .offer-card .offer-title span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #888;
+    font-family: "Alegreya", sans-serif;
+}
+
+.offer-cards .offer-card .description {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 32px;
+}
+/* End Our Offer Section */
+
+
+@media (max-width: 991px) {
+    .offer .background {
+        background-position: center;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .offer .hero-content .info h1 {
+        font-size: 49px;
+    }
+    .offer .offer-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+

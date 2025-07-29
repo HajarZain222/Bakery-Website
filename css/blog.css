@@ -1,0 +1,1133 @@
+/* Start Hero Section */
+.blog .hero-content ,
+.blog-archives .hero-content ,
+.blog-classes .hero-content ,
+.blog-photography .hero-content ,
+.blog-travel .hero-content ,
+.blog-peace .hero-content ,
+.blog-yoga .hero-content
+{
+    background-color: #F8F8F8;
+    min-height: 30vh;
+}
+
+.blog .hero-content .info ,
+.blog-archives .hero-content .info ,
+.blog-classes .hero-content .info ,
+.blog-photography .hero-content .info ,
+.blog-travel .hero-content .info ,
+.blog-peace .hero-content .info ,
+.blog-yoga .hero-content .info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0 20px;
+    margin: 40px 0 -40px;
+}
+
+.blog .hero-content .info h1 ,
+.blog-archives .hero-content .info h1 ,
+.blog-classes .hero-content .info h1 ,
+.blog-photography .hero-content .info h1 ,
+.blog-travel .hero-content .info h1 ,
+.blog-peace .hero-content .info h1 ,
+.blog-yoga .hero-content .info h1
+{
+    font-size: 36px;
+    font-weight: 400;
+    color: #303030;
+    font-family: "Alegreya", sans-serif;
+}
+
+.blog .hero-content .info .links ,
+.blog-archives .hero-content .info .links ,
+.blog-classes .hero-content .info .links ,
+.blog-photography .hero-content .info .links ,
+.blog-travel .hero-content .info .links ,
+.blog-peace .hero-content .info .links ,
+.blog-yoga .hero-content .info .links
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog .hero-content .info .links a ,
+.blog-archives .hero-content .info .links a ,
+.blog-classes .hero-content .info .links a ,
+.blog-photography .hero-content .info .links a ,
+.blog-travel .hero-content .info .links a  ,
+.blog-peace .hero-content .info .links a ,
+.blog-yoga .hero-content .info .links a
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 33px;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog .hero-content .info .links a:hover ,
+.blog-archives .hero-content .info .links a:hover ,
+.blog-classes .hero-content .info .links a:hover ,
+.blog-photography .hero-content .info .links a:hover ,
+.blog-travel .hero-content .info .links a:hover ,
+.blog-peace .hero-content .info .links a:hover ,
+.blog-yoga .hero-content .info .links a:hover
+{
+    color: var(--main-color);
+}
+
+.blog .hero-content .info .links span ,
+.blog-archives .hero-content .info .links span ,
+.blog-classes .hero-content .info .links span ,
+.blog-photography .hero-content .info .links span ,
+.blog-travel .hero-content .info .links span ,
+.blog-peace .hero-content .info .links span ,
+.blog-yoga .hero-content .info .links span
+{
+    color: #666;
+} 
+
+.blog .hero-content .info .links p ,
+.blog-archives .hero-content .info .links p ,
+.blog-classes .hero-content .info .links p ,
+.blog-photography .hero-content .info .links p ,
+.blog-travel .hero-content .info .links p ,
+.blog-peace .hero-content .info .links p ,
+.blog-yoga .hero-content .info .links p
+{
+    color: #666;
+}
+/* End Hero Section */
+
+/* Start Blog Content Section */
+.blog .blog-container .blog-content {
+    display: flex;
+    gap: 60px;
+}
+
+/* Start Blog Cards Section */
+.blog-content .blog-cards {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-items: start;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.blog-cards .card {
+    height: auto;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 767px) {
+    .blog .blog-cards .card.third-card {
+    margin-top: -40px; 
+    }
+}
+
+.blog-cards .card .image {
+    position: relative;
+    z-index: 2;
+}
+
+.blog-cards .card .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.card .slider {
+    height: 380px;
+}
+
+.blog-cards .card .card-info {
+    padding: 0 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.blog-cards .card h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #303030;
+    font-family: "Alegreya", sans-serif;
+    cursor: pointer;
+}
+
+.blog-cards .card h4:hover {
+    color: var(--main-color);
+}
+
+.blog-cards .card span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaa;
+    margin-top: -10px;
+}
+
+.blog-cards .card .description {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 10px 0 20px;
+    line-height: 33px;
+}
+
+.blog-cards .card a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 32px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-cards .card a:hover {
+    color: var(--main-color);
+}
+
+.blog-cards .card a i {
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-cards .card a:hover i {
+    transform: translateX(5px);
+}
+
+.blog-cards .card .quote-content {
+    display: block;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.blog-cards .card .quote-content:hover {
+    background-color: #333;
+}
+
+.blog-cards .card .quote-content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+.blog-cards .card .quote-content .author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-cards .card .quote-content .author span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 32px;
+}
+
+.blog-cards .card .quote-content .author i {
+    font-size: 20px;
+    font-weight: 600;
+    color: #adadad;
+    line-height: 26px;
+}
+
+.blog-cards .card .quote-content:hover .author i {
+    transform: translateX(0px);
+}
+
+/* End Blog Cards Section */
+
+
+/* Start Sidebar */
+.blog .blog-container .blog-content .sidebar {
+    flex: 1;
+}
+
+.sidebar .sidebar-content {
+    padding: 50px 0;
+}
+
+.sidebar .sidebar-content div:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.sidebar .sidebar-content .search {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sidebar .sidebar-content .search input {
+    padding: 12px 0px 12px 15px;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+}
+
+.sidebar .sidebar-content .search input::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+}
+
+.sidebar .sidebar-content .search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar .sidebar-content .search button:hover {
+    color: #303030;
+}
+
+.sidebar .sidebar-content h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #303030;
+    font-family: "Alegreya", sans-serif;
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-content ul li {
+    margin: 20px -40px;
+}
+
+.sidebar .sidebar-content ul li::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.sidebar .sidebar-content ul li a {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar .sidebar-content ul li a:hover {
+    color: var(--main-color);
+}
+
+/* End Sidebar */
+
+/* End Blog Content Section */
+
+
+
+/* Start Simple & Post & Basic & Quote */
+.blog-simple .hero-content ,
+.blog-gallery .hero-content ,
+.blog-basic .hero-content ,
+.blog-quote .hero-content {
+    background-color: #F8F8F8;
+}
+
+.blog-simple .hero-content .info ,
+.blog-gallery .hero-content .info ,
+.blog-basic .hero-content .info ,
+.blog-quote .hero-content .info {
+    text-align: center;
+    padding: 60px 0 10px;
+    margin: 20px 0 -20px;
+}
+
+.blog-simple .hero-content .info h1 ,
+.blog-gallery .hero-content .info h1 ,
+.blog-basic .hero-content .info h1 ,
+.blog-quote .hero-content .info h1 {
+    margin-bottom: 10px;
+    font-size: 36px; 
+    font-weight: 400;
+    color: #303030;
+    font-family: "Alegreya", sans-serif;
+}
+
+.blog-simple .hero-content .info .description ,
+.blog-gallery .hero-content .info .description ,
+.blog-basic .hero-content .info .description ,
+.blog-quote .hero-content .info .description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 24px;
+}
+
+.blog-simple .hero-content .info .description a ,
+.blog-gallery .hero-content .info .description a ,
+.blog-basic .hero-content .info .description a ,
+.blog-quote .hero-content .info .description a {
+    color: #6a6a6a;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-simple .hero-content .info .description a:hover ,
+.blog-gallery .hero-content .info .description a:hover ,
+.blog-basic .hero-content .info .description a:hover ,
+.blog-quote .hero-content .info .description a:hover {
+    color: var(--main-color);
+}
+
+.blog-simple .hero-content .info .links ,
+.blog-gallery .hero-content .info .links ,
+.blog-basic .hero-content .info .links ,
+.blog-quote .hero-content .info .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.blog-simple .hero-content .info .links a ,
+.blog-simple .hero-content .info .links span ,
+.blog-gallery .hero-content .info .links a ,
+.blog-gallery .hero-content .info .links span , 
+.blog-basic .hero-content .info .links a ,
+.blog-basic .hero-content .info .links span ,
+.blog-quote .hero-content .info .links a ,
+.blog-quote .hero-content .info .links span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #515151;
+    line-height: 32px;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-simple .hero-content .info .links a:hover ,
+.blog-gallery .hero-content .info .links a:hover ,
+.blog-basic .hero-content .info .links a:hover ,
+.blog-quote .hero-content .info .links a:hover {
+    color: var(--main-color);
+}
+
+.blog-simple .hero-content .info .links p ,
+.blog-gallery .hero-content .info .links p ,
+.blog-basic .hero-content .info .links p ,
+.blog-quote .hero-content .info .links p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 32px;
+}
+
+/* Start Blog Simple & Gallery & Basic & Quote Content */
+.blog-simple .blog-simple-container ,
+.blog-gallery .blog-gallery-container ,
+.blog-basic .blog-basic-container ,
+.blog-quote .blog-quote-container {
+    padding-top: 65px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.blog-simple-container .blog-simple-content ,
+.blog-gallery-container .blog-gallery-content ,
+.blog-basic-container .blog-basic-content ,
+.blog-quote-container .blog-quote-content {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 35px;
+    margin: auto;
+    text-align: center;
+}
+
+.blog-simple-content .image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.blog-simple-content .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    cursor: pointer;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dots .dot.active {
+    background-color: #fff;
+}
+
+.blog-simple-content .description ,
+.blog-gallery-content .description ,
+.blog-basic-content .description ,
+.blog-quote-content .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 20px 0;
+    line-height: 31px;
+    text-align: left;
+}
+
+/* Start Author */
+.blog-simple-container .author ,
+.blog-gallery-container .author ,
+.blog-basic-container .author ,
+.blog-quote-container .author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0;
+}
+
+.author .image img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author h5 {
+    font-size: 19px;
+    font-weight: 500;
+    color: #303030;
+    line-height: 26px;
+    font-family: "Alegreya", sans-serif;
+}
+
+.author .description {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 32px;
+    margin-top: -30px;
+}
+/* End Author */
+
+/* Start Post Slider */
+.post-slider {
+    padding: 60px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.post-slider .nav-link {
+    display: flex;
+    align-items: center;
+    color: #303030;
+    gap: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.post-slider .nav-link:hover {
+    color: var(--main-color);
+}
+
+.post-slider .nav-link .nav-text span {
+    display: block;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.post-slider .nav-link .nav-text .next-link {
+    text-align: right;
+}
+
+.post-slider .nav-link .nav-text h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Alegreya", sans-serif;
+}
+
+.post-slider .nav-link i {
+    font-size: 18px;
+}
+/* End Post Slider */
+
+/* Start Comments */
+.comments {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0;
+}
+
+.comments h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+    line-height: 25px;
+    margin: 0;
+    font-family: "Alegreya", sans-serif;
+}
+
+.comments .comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.comments .comment-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment .image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment .info .name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment .info .name h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #303030;
+    line-height: 22px;
+    font-family: "Open Sans", arial;
+}
+
+.comment .info .name span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7b7b7b;
+    line-height: 22px;
+    font-family: "Open Sans", arial;
+}
+
+.comment .info .description {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 32px;
+    margin-top: -30px;
+}
+
+.comments .comment button {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 22px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.comments .comment button:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+/* End Comments */
+
+/* Start Leave Comment */
+.leave-comment {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0;
+}
+
+.leave-comment h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+    line-height: 25px;
+    margin: 0;
+    font-family: "Alegreya", sans-serif;
+}
+
+.leave-comment .description {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 32px;
+}
+
+.leave-comment .message textarea {
+    padding: 12px;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    height: 200px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #7b7b7b;
+    line-height: 26px;
+    font-family: "Open Sans", arial;
+    resize: vertical;
+}
+
+.leave-comment .message textarea:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+.leave-comment .message textarea::placeholder {
+    color: #666;
+}
+
+.leave-comment .inputs {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.leave-comment .inputs input {
+    padding: 12px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7b7b7b;
+    line-height: 22px;
+    border: 1px solid #e6e6e6;
+    font-family: "Open Sans", arial;
+}
+
+.leave-comment .inputs input:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+.leave-comment .btn button {
+    padding: 15px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Open Sans", arial;
+    background-color: var(--main-color);
+    color: #fff;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.leave-comment .btn button:hover {
+    background-color: #333;
+    border-color: #333;
+}
+/* End Leave Comment */
+
+/* Start Replying */
+.replying-to {
+    border-top: 1px solid #e6e6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.replying-box {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+    line-height: 25px;
+    margin: 0;
+    font-family: "Alegreya", sans-serif;
+}
+
+.hoverable-title {
+    color: #303030;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Alegreya", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.hoverable-title:hover {
+    color: var(--main-color);
+}
+
+/* End Replying */
+
+/* Start Quote */
+.quote {
+    border-left: 3px solid #C3C3C3;
+    position: relative;
+    padding: 10px 50px;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--main-color);
+}
+
+.quote::before,
+.quote::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #C3C3C3;
+    font-size: 20px;
+    position: absolute;
+}
+
+.quote::before {
+    content: "\f10d"; 
+    top: 20px;
+    left: 20px;
+}
+
+.quote::after {
+    content: "\f10e"; 
+    bottom: 20px;
+    right: 20px;
+}
+
+/* End Quote */
+
+/* Start Title */
+.blog-gallery .title ,
+.blog-basic .title ,
+.blog-quote .title {
+    font-size: 18;
+    font-weight: 500;
+    color: #303030;
+    line-height: 25px;
+    margin: 0;
+    font-family: "Alegreya", sans-serif;
+    text-align: left;
+}
+/* End Title */
+
+/* Start Image */
+.inline-image {
+    float: left; 
+    text-align: left;
+    padding: 30px 30px 20px 0;
+    width: 300px;
+    height: auto;
+    /* margin: 10px 30px 20px 0; */
+}
+
+.text-with-image::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* End Image */
+
+/* Start Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    padding: 20px 0;
+}
+
+.buttons a {
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+    line-height: 32px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    margin: 0 7px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.buttons a:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: #fff;
+}
+/* End Buttons */
+
+/* Start Quote --- */
+.quote-content {
+    display: block;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.quote-content:hover {
+    background-color: #333;
+}
+
+.quote-content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+.quote-content .author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote-content .author span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 32px;
+}
+
+.quote-content .author i {
+    font-size: 20px;
+    font-weight: 600;
+    color: #adadad;
+    line-height: 26px;
+}
+
+.quote-content:hover .author i {
+    transform: translateX(0px);
+}
+/* End Quote --- */
+
+/* Start Quote Box */
+.quote-box {
+    display: block;
+    background-color: var(--main-color);
+    padding: 10px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.quote-box:hover {
+    background-color: #333;
+}
+
+.quote-box p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.quote-box .author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote-box .author span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 32px;
+}
+
+.quote-box .author i {
+    font-size: 25px;
+    font-weight: 600;
+    color: #adadad;
+    line-height: 26px;
+}
+
+.quote-box:hover .author i {
+    transform: translateX(0px);
+}
+
+/* End Quote Box */
+
+/* End Blog Simple & Gallery & Basic & Quote Content */
+
+/* End Simple & Gallery & Basic & Quote Post */
+
+/* Start Archives & Classes & Photography & Travel & Peace & Yoga  */
+.blog-archives .blog-archives-container .blog-content ,
+.blog-classes .blog-classes-container .blog-content ,
+.blog-photography .blog-photography-container .blog-content ,
+.blog-travel .blog-travel-container .blog-content ,
+.blog-peace .blog-peace-container .blog-content ,
+.blog-yoga .blog-yoga-container .blog-content
+{
+    display: flex;
+    gap: 60px;
+} 
+
+.blog-archives .blog-cards ,
+.blog-classes .blog-cards ,
+.blog-photography .blog-cards ,
+.blog-travel .blog-cards ,
+.blog-peace .blog-cards ,
+.blog-yoga .blog-cards
+{
+    grid-template-columns: 1fr;
+}
+
+.blog-archives .sidebar ,
+.blog-classes .sidebar ,
+.blog-photography .sidebar ,
+.blog-travel .sidebar ,
+.blog-peace .sidebar ,
+.blog-yoga .sidebar
+{
+    flex: 1;
+}
+
+.blog-archives .blog-cards .card .image ,
+.blog-classes .blog-cards .image,
+.blog-photography .blog-cards .image,
+.blog-travel .blog-cards .image,
+.blog-peace .blog-cards .image,
+.blog-yoga .blog-cards .image
+{
+    height: 380px;
+    position: relative;
+}
+
+.blog-archives .blog-cards .card .image img ,
+.blog-classes .blog-cards .card .image img ,
+.blog-photography .blog-cards .card .image img ,
+.blog-travel .blog-cards .card .image img ,
+.blog-peace .blog-cards .card .image img ,
+.blog-yoga .blog-cards .card .image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* End Archives & Classes & Photography & Travel & Peace & Yoga */
+
+@media (max-width: 991px) {
+    .blog .hero-content ,
+    .blog-archives .hero-content ,
+    .blog-classes .hero-content ,
+    .blog-photography .hero-content ,
+    .blog-travel .hero-content ,
+    .blog-peace .hero-content ,
+    .blog-yoga .hero-content
+    {
+        margin-top: -30px;
+    }
+
+    .blog .blog-container .blog-content ,
+    .blog-archives .blog-archives-container .blog-content ,
+    .blog-classes .blog-classes-container .blog-content ,
+    .blog-photography .blog-photography-container .blog-content ,
+    .blog-travel .blog-travel-container .blog-content ,
+    .blog-peace .blog-peace-container .blog-content ,
+    .blog-yoga .blog-yoga-container .blog-content
+    {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-simple .hero-content .info ,
+    .blog-gallery .hero-content .info ,
+    .blog-basic .hero-content .info ,
+    .blog-quote .hero-content .info {
+        padding-bottom: 10px;
+    }
+
+    .blog-simple .hero-content .info h1 ,
+    .blog-gallery .hero-content .info h1 ,
+    .blog-basic .hero-content .info h1 ,
+    .blog-quote .hero-content .info h1 {
+        font-size: 28px;
+        margin-bottom: -10px;
+    }
+
+    .blog .hero-content .info ,
+    .blog-archives .hero-content .info ,
+    .blog-classes .hero-content .info ,
+    .blog-photography .hero-content .info ,
+    .blog-travel .hero-content .info ,
+    .blog-peace .hero-content .info ,
+    .blog-yoga .hero-content .info
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 0 40px;
+    }
+
+    .blog .hero-content .info h1 ,
+    .blog-archives .hero-content .info h1 ,
+    .blog-classes .hero-content .info h1 ,
+    .blog-photography .hero-content .info h1 ,
+    .blog-travel .hero-content .info h1 ,
+    .blog-peace .hero-content .info h1 ,
+    .blog-yoga .hero-content .info h1
+    {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .blog .hero-content .info .links ,
+    .blog-archives .hero-content .info .links ,
+    .blog-classes .hero-content .info .links ,
+    .blog-photography .hero-content .info .links ,
+    .blog-travel .hero-content .info .links ,
+    .blog-peace .hero-content .info .links ,
+    .blog-yoga .hero-content .info .links
+    {
+        font-size: 15px;
+    }
+
+    .leave-comment .inputs {
+        flex-direction: column;
+        gap: 25px;
+    }
+}

@@ -1,0 +1,152 @@
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #403D38;
+    padding: 50px 150px;
+}
+
+.columns .column .title {
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Alegreya", sans-serif;
+    margin-bottom: 20px;
+}
+
+.columns .column .description ,
+.columns .column .list ul li {
+    color: #969696;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.columns .column .list ul li {
+    padding-bottom: 10px;
+    margin-left: -40px;
+    display: flex;
+}
+
+.columns .column .list ul li:not(:last-child) {
+    border-bottom: 1px solid #4A4742;
+}
+
+.columns .column .list ul li::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 5px;
+    color: #969696;
+}
+
+.columns .column.background .list ul li::before {
+    content: none;
+}
+
+.columns .column .list ul li .icon {
+    display: inline-block;
+    margin: 6px 10px;
+}
+
+.columns .column .list ul li a {
+    color: #969696;
+}
+
+.columns .column .list ul li a:hover {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.columns .column.background {
+    position: relative;
+    z-index: 1;
+}
+
+.columns .column.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/contact-details-map.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; 
+    z-index: -1;
+}
+
+.bottom {
+    background-color: #353330;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    padding: 50px 150px 40px;
+}
+
+.bottom .copyright {
+    margin-bottom: 10px;
+    color: #777;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.bottom .social-icons .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #484540;
+    color: #969696;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 10px 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom .social-icons .icon:hover {
+    color: #fff;
+}
+
+.bottom .social-icons .facebook:hover {
+    background-color: #3B5998;
+}
+
+.bottom .social-icons .google:hover {
+    background-color: #DD4B39;
+}
+
+.bottom .social-icons .linkedin:hover {
+    background-color: #007BB5;
+}
+
+.bottom .social-icons .twitter:hover {
+    background-color: #00ACED;
+}
+
+@media (max-width: 991px) {
+    .columns {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .columns {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 575px) {
+    .columns {
+        padding: 20px;
+    }
+    .bottom {
+        padding: 50px 20px 40px;
+    }
+}

@@ -1,0 +1,301 @@
+@media (min-width: 992px) {
+    .header.homepage {
+        background-color: transparent;
+    }
+
+    .header.homepage .main-link {
+        color: #fff;
+    }
+
+    .header.homepage .main-link:hover  {
+        color: var(--main-color);
+    }
+
+    .header.homepage .main-link.active {
+        color: #dedcdc;
+    }
+
+    .header.homepage .main-link.active::before {
+        top: -10px;
+    }
+
+    .header.homepage #logo-img {
+        content: url("../images/bakery-light.png");
+    }
+
+    .header.homepage.scrolled {
+        background-color: #fff;
+    }
+
+    .header.homepage.scrolled .main-link {
+        color: #595959;
+    }
+
+    .header.homepage.scrolled .main-link:hover ,
+    .header.homepage.scrolled .main-link.active {
+        color: #000;
+    }
+
+    .header.homepage.scrolled #logo-img {
+        content: url("../images/bakery-color.png");
+    }
+
+    .header:not(.homepage) {
+        background-color: #fff;
+    }
+
+    .header:not(.homepage) .main-link {
+        color: #595959;
+    }
+
+    .header:not(.homepage) .main-link:hover ,
+    .header:not(.homepage) .main-link.active {
+        color: #121212;
+    }
+
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px 0;
+        width: 100%;
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .header.scrolled {
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        padding: 0;
+    }
+
+    .header .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .links-container .listOfLinks {
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    } 
+
+    .header .listOfLinks li .main-link {
+        display: inline-block;
+        font-size: 18px;
+        font-family: "Alegreya", sans-serif;
+        transition: color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .header .listOfLinks li .main-link.active {
+        position: relative;
+    }
+
+    .header .listOfLinks li .main-link.active::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: -5px;
+        height: 3px;
+        width: 120%;
+        background-color: var(--main-color);
+        transform: translateY(-11px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .header.header.scrolled .listOfLinks li .main-link.active::before {
+        top: -5px;
+    }
+
+    /* Start Dropdown */
+    .links-container ul li.dropdown {
+        position: relative;
+    }
+
+    .links-container ul li .dropdown-menu {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background-color: #433e37f2;
+        padding: 10px 0;
+        width: 220px;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .links-container ul li .dropdown-menu li {
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .links-container ul li .dropdown-menu li .secondary-link {
+        height: 100%;
+        padding: 10px 20px;
+        color: #ccc;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .links-container ul li .dropdown-menu li:hover {
+        background-color: var(--main-color);
+    }
+
+    .links-container ul li .dropdown-menu li:hover .secondary-link {
+        color: #fff;
+        padding-left: 18px;
+    }
+
+    .links-container ul li.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+/* End Dropdown */
+}
+
+@media (max-width: 991px) {
+    .header.homepage {
+        position: relative;
+        background-color: #fff;
+        z-index: 1000;
+    }
+
+    .header {
+        position: static;
+        padding: 5px 0;
+    }
+
+    .header .nav-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .listOfLinks li .main-link.active::before { 
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .links-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 999;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .links-container.open {
+        max-height: 600px;
+    }
+
+    .listOfLinks {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .listOfLinks li {
+        width: 100%;
+        border-top: 1px solid #eee;
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .listOfLinks li .main-link {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        color: #333 !important;
+    }
+
+    .listOfLinks li .main-link:hover {
+        color: var(--main-color) !important;
+    }
+
+    .dropdown .dropdown-menu {
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: flex;
+        max-height: 300px;
+    }
+
+    .dropdown-menu li {
+        border-top: 1px solid #eee;
+        padding: 15px 0;
+    }
+
+    .secondary-link {
+        padding: 8px 0;
+        color: #333;
+    }
+
+    .dropdown .secondary-link:hover {
+        color: #121212;
+    }
+
+    .listOfLinks .dropdown > .main-link {
+        position: relative;
+        display: block;
+        padding-right: 28px; 
+    }
+
+    .listOfLinks .dropdown > .main-link::after {
+        content: "\f105";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        color: #555;
+        transition: transform 0.2s ease, color 0.2s ease;
+        pointer-events: none;   
+    }
+
+    .listOfLinks .dropdown.open > .main-link::after {
+        transform: translateY(-50%) rotate(90deg);
+        color: var(--main-color);
+    }
+}
