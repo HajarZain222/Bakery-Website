@@ -21,6 +21,8 @@
 
     .header.homepage #logo-img {
         content: url("../images/bakery-light.png");
+        width: 180px;
+        height: 50px;
     }
 
     .header.homepage.scrolled {
@@ -38,6 +40,8 @@
 
     .header.homepage.scrolled #logo-img {
         content: url("../images/bakery-color.png");
+        width: 180px;
+        height: 50px;
     }
 
     .header:not(.homepage) {
